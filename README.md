@@ -1,4 +1,5 @@
 # credit-card-fraud-detection
+# Overview
 Detect fraudulent credit card transactions using machine learning models like Logistic Regression, Random Forest, and XGBoost. The project addresses class imbalance through oversampling and evaluates models using accuracy, precision, recall, and F1-score.
 # Problem Statement
 Credit card fraud is a significant issue in the financial sector. The goal is to build a machine learning model that can effectively identify fraudulent transactions while minimizing false positives.
