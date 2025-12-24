@@ -1,68 +1,41 @@
-# credit-card-fraud-detection
-# Overview
-Detect fraudulent credit card transactions using machine learning models like Logistic Regression, Random Forest, and XGBoost. The project addresses class imbalance through oversampling and evaluates models using accuracy, precision, recall, and F1-score.
-# Problem Statement
-Credit card fraud is a significant issue in the financial sector. The goal is to build a machine learning model that can effectively identify fraudulent transactions while minimizing false positives.
-# Dataset
-📁 [Download Dataset](https://drive.google.com/file/d/1Zf163ZWz50fqnRgf1odqJjtImYJDSYZm/view?usp=drive_link)
-- Features:
-  - Time, Amount, V1 to V28 (PCA components)
-  - Class (0 = Non-Fraud, 1 = Fraud)
-# Technologies & Libraries Used
-- Python 
-- Pandas & NumPy
-- Matplotlib & Seaborn
-- Scikit-learn
-- Imbalanced-learn (`OverSampling`)
-- XGBoost
-# Machine Learning Models
-- Logistic Regression
-- Random Forest
-- XGBoost
-# Evaluation Metrics
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Confusion Matrix
-# Visualizations
-- Class distribution before and after oversampling
-- Confusion matrix for each model
-# Steps Followed
-1. Load all Dependencies
-   
-    - Numpy
-    - Pandas
-    - Classification metrics
-    - Classification Models
-      
-2. Data Exploration
-   
-    - Checked for null values
-    - Examined class distribution (legit vs fraud)
-      
-3. Preprocessing
+📌 Project Title
 
-    - Standardized Amount and Time features using StandardScaler
-    
-4. Handling imbalance data
+Credit Card Fraud Detection
 
-    - Applied Oversampling (SMOTE or RandomOverSampler) on the minority class
-    - Tested mean imputation for missing values
-    
-5. Model Training
+📖 Problem Statement
 
-    - Logistic Regression
-    - Random Forest
-    - XGBoost
-      
-6. Model Evaluation
+Detect fraudulent credit card transactions using machine learning to minimize financial losses caused by fraud.
 
-    - Confusion Matrix
-    - Accuracy
-    - Precision
-    - Recall
-    - F1 Score
-  
-# Conclusion
-This project demonstrates how machine learning can be effectively applied to detect fraudulent credit card transactions by addressing class imbalance and using multiple evaluation metrics to ensure performance.
+📊 Dataset
+
+Real-world credit card transaction dataset
+
+Highly imbalanced (fraud << normal transactions)
+
+🛠️ Approach
+
+Data preprocessing and feature scaling
+
+Handled class imbalance using SMOTE
+
+Trained classification models
+
+Evaluated performance using ROC-AUC, Precision, Recall, and F1-score
+
+📈 Results
+
+Achieved strong fraud detection performance
+
+ROC-AUC and F1-score used to validate robustness
+
+🧰 Tools & Technologies
+
+Python, Pandas, NumPy, scikit-learn, imbalanced-learn, Matplotlib
+
+🚀 Future Improvements
+
+Try ensemble models
+
+Deploy as a REST API
+
+Real-time fraud detection pipeline
